@@ -1,0 +1,7 @@
+@import 'src/assets/scss/colors.scss';
+
+.main-menu-container {
+    height: 100%;
+    padding: 20px;
+    border-right: 4px double $field-border;
+}

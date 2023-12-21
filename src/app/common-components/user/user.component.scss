@@ -1,0 +1,36 @@
+@import 'src/assets/scss/colors.scss';
+
+.user-container {
+    height: 100%;
+
+    .avatar-container {
+        margin-right: 15px;
+        height: 100%;
+
+        img
+        {
+            height: 100%;
+            width: auto;
+            border-radius: 50%;
+            border: 2px solid $blue;
+        }
+    }
+    .name-container {
+        color: $blue;
+        // font-size: 1.5rem;
+    }
+
+    &.layout-invert {
+        .avatar-container {
+            margin-right: 15px;
+            img
+            {
+                border: 2px solid $white;
+            }
+        }
+        .name-container {
+            color: $white;
+        }
+    }
+
+}

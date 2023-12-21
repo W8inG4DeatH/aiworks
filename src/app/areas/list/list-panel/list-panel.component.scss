@@ -1,0 +1,20 @@
+@import 'src/assets/scss/colors.scss';
+
+.content-container
+{
+    .header
+    {
+        color: $white;
+        background-color: $field-border;
+    }
+
+    .content-element
+    {
+        padding: 10px 15px;
+
+        &.header
+        {
+            cursor: pointer;
+        }
+    }
+}

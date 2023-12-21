@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.sass'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: [
+        './app.component.scss',
+        './../assets/scss/colors.scss',
+        './../assets/scss/buttons.scss'
+    ],
+    encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent {
-  title = 'aiworks';
 }

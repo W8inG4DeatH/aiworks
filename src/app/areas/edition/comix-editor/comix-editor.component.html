@@ -1,0 +1,15 @@
+<div fxLayout="row" fxFlex>
+    <div fxLayout="column" fxFlex="50">
+        <div class="buttons-container" fxLayout="row" fxLayoutAlign="start center">
+            <div (click)="OnFormat()" class="button-container" fxLayout="row" fxLayoutAlign="center center">h1</div>
+        </div>
+        <textarea
+            (ngModel)="htmlContent"
+            rows="50"
+            class="html-editor-area"
+        ></textarea>
+    </div>
+    <div class="second-column" fxLayout="column" fxFlex="50">
+        EDITION
+    </div>
+</div>
