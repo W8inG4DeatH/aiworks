@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { UserComponent } from 'src/app/common-components/user/user.component';
+import { HtmlEditorComponent } from './html-editor/html-editor.component';
 
 @NgModule({
     imports: [
@@ -10,9 +11,11 @@ import { UserComponent } from 'src/app/common-components/user/user.component';
         FlexLayoutModule
     ],
     declarations: [
+        HtmlEditorComponent,
         UserComponent
     ],
     exports: [
+        HtmlEditorComponent,
         UserComponent
     ]
 })
