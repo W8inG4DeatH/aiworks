@@ -12,6 +12,7 @@ const routes: Routes = [
     { path: 'dashboard', component: WidgetsPanelComponent },
     { path: 'list', component: ListPanelComponent },
     { path: 'edition', component: ComixEditorComponent, canActivate: [EditionGuardGuard] },
+    { path: 'edition/:id', component: ComixEditorComponent, canActivate: [EditionGuardGuard] },
     { path: 'html-editor', component: HtmlEditorComponent }
 ];
 

@@ -28,7 +28,7 @@ export class MainMenuComponent implements OnInit {
         RouterLink: '/list'
       },
       {
-        DisplayName: 'Edition',
+        DisplayName: 'Add',
         RouterLink: '/edition'
       },
       // {
