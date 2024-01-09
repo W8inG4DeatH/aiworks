@@ -19,22 +19,22 @@ export class MainMenuComponent implements OnInit {
 
   InitMainMenu() {
     this.mainMenu = [
-      // {
-      //     DisplayName: 'Dashboard',
-      //     RouterLink: '/dashboard'
-      // },
       {
-        DisplayName: 'HTML Editor',
-        RouterLink: '/html-editor'
+          DisplayName: 'Dashboard',
+          RouterLink: '/dashboard'
       },
       {
         DisplayName: 'List',
         RouterLink: '/list'
       },
+      {
+        DisplayName: 'Edition',
+        RouterLink: '/edition'
+      },
       // {
-      //   DisplayName: 'Edition',
-      //   RouterLink: '/edition'
-      // }
+      //   DisplayName: 'HTML Editor',
+      //   RouterLink: '/html-editor'
+      // },
     ]
   }
 

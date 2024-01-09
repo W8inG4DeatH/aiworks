@@ -8,7 +8,7 @@ import { EditionGuardGuard } from 'src/app/areas/edition/edition-guard.guard';
 import { HtmlEditorComponent } from './common-components/html-editor/html-editor.component';
 
 const routes: Routes = [
-    { path: '', component: ListPanelComponent },
+    { path: '', component: WidgetsPanelComponent },
     { path: 'dashboard', component: WidgetsPanelComponent },
     { path: 'list', component: ListPanelComponent },
     { path: 'edition', component: ComixEditorComponent, canActivate: [EditionGuardGuard] },
