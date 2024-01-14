@@ -1,0 +1,12 @@
+ZAŁOŻENIA:
+
+Elementy, które muszą być zaimplementowane:
+Dotychczasowe opcje formatowania - możliwie jak najbardziej zbliżone
+Możliwość konfigurowania toolbara - wsparcie dla dotychczasowego warunkowania
+Przyciski w toolbarze:
+przycisk full screen
+możliwość wstawienia szablonu komentarza
+wybrania pliku do dodania
+Wsparcie dla mention - @, #, >:
+podczas pisania
+z poziomu footer'a(toolbara) 

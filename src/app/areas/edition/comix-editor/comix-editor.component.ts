@@ -30,7 +30,6 @@ export class ComixEditorComponent implements OnInit {
       const idParam = params.get('id');
       const id = idParam !== null ? Number(idParam) : null;
 
-      // Sprawdzenie, czy 'id' jest skończoną liczbą
       if (id !== null && Number.isFinite(id)) {
         this.id = id;
         this.element = this.LoadElement(this.id);
