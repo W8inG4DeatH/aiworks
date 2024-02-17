@@ -8,7 +8,7 @@ import { ApiService } from 'src/api/api.service';
 })
 export class WidgetsPanelComponent implements OnInit {
   public prompt: string = '';
-  public promptAnswer: any = null;
+  public promptAnswer: any = '';
 
   constructor(
     private apiService: ApiService
