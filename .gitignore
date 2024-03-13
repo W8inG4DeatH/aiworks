@@ -41,5 +41,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
-## OpenAI key
+## API keys
 openai.key
+openai-api.key
