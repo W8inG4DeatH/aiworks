@@ -15,12 +15,13 @@ export class WidgetsPanelComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.prompt = 'Opowiedz krótki kawał po polsku.';
+    this.prompt = 'Jaką wersją gpt jesteś?';
   }
 
-  async OnSendPromptClick() {
-    const gptResponse: any = await this.apiService.SendPrompt(this.prompt);
+  async onSendGPTPromptClick() {
+    const gptResponse: any = await this.apiService.sendGPTPrompt(this.prompt);
+    console.log('gptResponse:', gptResponse);
     this.promptAnswer = gptResponse.choices[0].message.content;
-    console.log('this.promptAnswer:', this.promptAnswer, gptResponse);
+    console.log('this.promptAnswer:', this.promptAnswer);
   }
 }
