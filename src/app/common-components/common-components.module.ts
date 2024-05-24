@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { UserComponent } from 'src/app/common-components/user/user.component';
 import { HtmlEditorComponent } from './html-editor/html-editor.component';
+import { AiPrompterComponent } from './ai-prompter/ai-prompter.component';
 
 @NgModule({
     imports: [
@@ -14,11 +15,13 @@ import { HtmlEditorComponent } from './html-editor/html-editor.component';
     ],
     declarations: [
         HtmlEditorComponent,
-        UserComponent
+        UserComponent,
+        AiPrompterComponent
     ],
     exports: [
         HtmlEditorComponent,
-        UserComponent
+        UserComponent,
+        AiPrompterComponent
     ]
 })
 
