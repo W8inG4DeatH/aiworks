@@ -8,7 +8,7 @@ export class ApiService {
 
   async sendGPTPrompt(prompt: string) {
     const gpt4: boolean = true;
-    const openAIAPIKey: string = '';
+    const openAIAPIKey: string = './api.keys';
     const bearerKey: string = 'Bearer ' + openAIAPIKey;
 
     if (gpt4) {
