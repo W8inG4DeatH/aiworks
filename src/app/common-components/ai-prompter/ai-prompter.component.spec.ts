@@ -6,23 +6,22 @@ import { DebugElement } from '@angular/core';
 import { AiPrompterComponent } from './ai-prompter.component';
 
 describe('AiPrompterComponent', () => {
-  let component: AiPrompterComponent;
-  let fixture: ComponentFixture<AiPrompterComponent>;
+    let component: AiPrompterComponent;
+    let fixture: ComponentFixture<AiPrompterComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ AiPrompterComponent ]
-    })
-    .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [AiPrompterComponent],
+        }).compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(AiPrompterComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AiPrompterComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

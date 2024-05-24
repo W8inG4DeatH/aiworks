@@ -8,21 +8,8 @@ import { HtmlEditorComponent } from './html-editor/html-editor.component';
 import { AiPrompterComponent } from './ai-prompter/ai-prompter.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FlexLayoutModule,
-        FormsModule
-    ],
-    declarations: [
-        HtmlEditorComponent,
-        UserComponent,
-        AiPrompterComponent
-    ],
-    exports: [
-        HtmlEditorComponent,
-        UserComponent,
-        AiPrompterComponent
-    ]
+    imports: [CommonModule, FlexLayoutModule, FormsModule],
+    declarations: [HtmlEditorComponent, UserComponent, AiPrompterComponent],
+    exports: [HtmlEditorComponent, UserComponent, AiPrompterComponent],
 })
-
-export class CommonComponentsModule { }
+export class CommonComponentsModule {}

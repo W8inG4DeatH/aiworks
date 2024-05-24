@@ -1,15 +1,12 @@
 <div fxLayout="row" fxFlex>
-  <div #myHtmlEditorContainer fxLayout="column" fxFlex="50">
-    <div class="buttons-container" fxLayout="row" fxLayoutAlign="start center">
-      <div class="button-container" fxLayout="row" fxLayoutAlign="center center">M</div>
+    <div #myHtmlEditorContainer fxLayout="column" fxFlex="50">
+        <div class="buttons-container" fxLayout="row" fxLayoutAlign="start center">
+            <div class="button-container" fxLayout="row" fxLayoutAlign="center center">M</div>
+        </div>
+
+        <div class="html-content" [innerHTML]="safeHtmlContent"></div>
     </div>
-
-    <div class="html-content" [innerHTML]="safeHtmlContent"></div>
-
-  </div>
-  <div class="second-column" fxLayout="column" fxFlex="50">
-
-    <textarea class="html-editor" [(ngModel)]="htmlContent"></textarea>
-
-  </div>
+    <div class="second-column" fxLayout="column" fxFlex="50">
+        <textarea class="html-editor" [(ngModel)]="htmlContent"></textarea>
+    </div>
 </div>

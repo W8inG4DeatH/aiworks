@@ -14,24 +14,9 @@ import { AppService } from 'src/app/app.service';
 import { ApiService } from 'src/api/api.service';
 
 @NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        AppRoutingModule,
-        FlexLayoutModule,
-        CommonComponentsModule,
-        AreasModule
-    ],
-    providers: [
-        AppService,
-        ApiService
-    ],
-    bootstrap: [
-        AppComponent
-    ]
+    declarations: [AppComponent],
+    imports: [BrowserModule, HttpClientModule, AppRoutingModule, FlexLayoutModule, CommonComponentsModule, AreasModule],
+    providers: [AppService, ApiService],
+    bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}

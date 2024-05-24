@@ -9,17 +9,11 @@ const routes: Routes = [
     { path: '', component: WidgetsPanelComponent },
     { path: 'dashboard', component: WidgetsPanelComponent },
     { path: 'ai-prompting-single', component: AiPrompterComponent },
-    { path: 'html-editor', component: HtmlEditorComponent }
+    { path: 'html-editor', component: HtmlEditorComponent },
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(routes),
-        DashboardModule
-    ],
-    exports: [
-        RouterModule
-    ]
+    imports: [RouterModule.forRoot(routes), DashboardModule],
+    exports: [RouterModule],
 })
-
-export class AppRoutingModule { }
+export class AppRoutingModule {}

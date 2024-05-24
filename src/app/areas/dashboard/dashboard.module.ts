@@ -5,13 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { WidgetsPanelComponent } from 'src/app/areas/dashboard/widgets-panel/widgets-panel.component';
 
 @NgModule({
-  declarations: [
-    WidgetsPanelComponent
-  ],
-  imports: [
-    FlexLayoutModule,
-    CommonModule,
-    FormsModule
-  ]
+    declarations: [WidgetsPanelComponent],
+    imports: [FlexLayoutModule, CommonModule, FormsModule],
 })
-export class DashboardModule { }
+export class DashboardModule {}
