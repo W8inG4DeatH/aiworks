@@ -24,17 +24,9 @@ export class MainMenuComponent implements OnInit {
           RouterLink: '/dashboard'
       },
       {
-        DisplayName: 'List',
-        RouterLink: '/list'
+        DisplayName: 'AI Prompting (FES)',
+        RouterLink: '/ai-prompting-fes'
       },
-      {
-        DisplayName: 'Add',
-        RouterLink: '/edition'
-      },
-      // {
-      //   DisplayName: 'HTML Editor',
-      //   RouterLink: '/html-editor'
-      // },
     ]
   }
 
