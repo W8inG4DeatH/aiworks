@@ -5,21 +5,11 @@ import { FormsModule } from '@angular/forms';
 
 import { UserComponent } from 'src/app/common-components/user/user.component';
 import { HtmlEditorComponent } from './html-editor/html-editor.component';
+import { AiPrompterComponent } from './ai-prompter/ai-prompter.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FlexLayoutModule,
-        FormsModule
-    ],
-    declarations: [
-        HtmlEditorComponent,
-        UserComponent
-    ],
-    exports: [
-        HtmlEditorComponent,
-        UserComponent
-    ]
+    imports: [CommonModule, FlexLayoutModule, FormsModule],
+    declarations: [HtmlEditorComponent, UserComponent, AiPrompterComponent],
+    exports: [HtmlEditorComponent, UserComponent, AiPrompterComponent],
 })
-
-export class CommonComponentsModule { }
+export class CommonComponentsModule {}

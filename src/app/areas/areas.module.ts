@@ -4,8 +4,6 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CommonComponentsModule } from 'src/app/common-components/common-components.module';
-import { ListModule } from 'src/app/areas/list/list.module';
-import { EditionModule } from 'src/app/areas/edition/edition.module';
 import { LoginModule } from 'src/app/areas/login/login.module';
 import { MainHeaderComponent } from 'src/app/areas/main-header/main-header.component';
 import { MainMenuComponent } from 'src/app/areas/main-menu/main-menu.component';
@@ -25,8 +23,6 @@ import { AiPromptingFrontendModule } from 'src/app/areas/ai-prompting-frontend/a
             AppRoutingModule,
             FlexLayoutModule,
             CommonComponentsModule,
-            ListModule,
-            EditionModule,
             LoginModule,
             DashboardModule,
             AiPromptingFrontendModule,
@@ -37,5 +33,4 @@ import { AiPromptingFrontendModule } from 'src/app/areas/ai-prompting-frontend/a
             MainMenuComponent
         ]
 })
-
-export class AreasModule { }
+export class AreasModule {}

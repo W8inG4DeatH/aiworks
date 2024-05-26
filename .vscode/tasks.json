@@ -37,6 +37,16 @@
           }
         }
       }
-    }
+    },
+	{
+		"label": "format all files in src",
+		"type": "shell",
+		"command": "npx prettier --write 'src/**/*.{ts,html,scss}'",
+		"problemMatcher": [],
+		"group": {
+			"kind": "build",
+			"isDefault": true
+		}
+	}
   ]
 }

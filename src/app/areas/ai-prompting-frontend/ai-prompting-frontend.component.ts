@@ -19,7 +19,7 @@ export class AiPromptingFrontendComponent implements OnInit {
   }
 
   async OnSendPromptClick() {
-    const gptResponse: any = await this.apiService.SendPrompt(this.prompt);
+    const gptResponse: any = await this.apiService.sendGPTPrompt(this.prompt);
     this.promptAnswer = gptResponse.choices[0].message.content;
     console.log('this.promptAnswer:', this.promptAnswer, gptResponse);
   }

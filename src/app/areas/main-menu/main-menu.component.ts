@@ -4,11 +4,9 @@ import { IMainMenuElement } from 'src/app/areas/areas.interfaces';
 @Component({
   selector: 'main-menu',
   templateUrl: './main-menu.component.html',
-  styleUrls: ['./main-menu.component.scss']
+  styleUrls: ['./main-menu.component.scss'],
 })
-
 export class MainMenuComponent implements OnInit {
-
   public mainMenu: Array<IMainMenuElement> = [];
 
   constructor() { }
@@ -20,8 +18,8 @@ export class MainMenuComponent implements OnInit {
   InitMainMenu() {
     this.mainMenu = [
       {
-          DisplayName: 'Dashboard',
-          RouterLink: '/dashboard'
+        DisplayName: 'Dashboard',
+        RouterLink: '/dashboard'
       },
       {
         DisplayName: 'AI Prompting (FES)',
@@ -29,5 +27,4 @@ export class MainMenuComponent implements OnInit {
       },
     ]
   }
-
 }

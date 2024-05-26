@@ -3,20 +3,20 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { HtmlEditorComponent } from './html-editor.component';
+import { AiPrompterComponent } from './ai-prompter.component';
 
-describe('HtmlEditorComponent', () => {
-    let component: HtmlEditorComponent;
-    let fixture: ComponentFixture<HtmlEditorComponent>;
+describe('AiPrompterComponent', () => {
+    let component: AiPrompterComponent;
+    let fixture: ComponentFixture<AiPrompterComponent>;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [HtmlEditorComponent],
+            declarations: [AiPrompterComponent],
         }).compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(HtmlEditorComponent);
+        fixture = TestBed.createComponent(AiPrompterComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
