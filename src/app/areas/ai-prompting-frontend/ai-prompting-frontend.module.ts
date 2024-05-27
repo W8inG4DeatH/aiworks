@@ -5,13 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AiPromptingFrontendComponent } from 'src/app/areas/ai-prompting-frontend/ai-prompting-frontend.component';
 
 @NgModule({
-  declarations: [
-    AiPromptingFrontendComponent
-  ],
-  imports: [
-    FlexLayoutModule,
-    CommonModule,
-    FormsModule
-  ]
+    declarations: [AiPromptingFrontendComponent],
+    imports: [FlexLayoutModule, CommonModule, FormsModule],
 })
-export class AiPromptingFrontendModule { }
+export class AiPromptingFrontendModule {}

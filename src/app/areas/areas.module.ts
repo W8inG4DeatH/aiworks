@@ -12,25 +12,16 @@ import { DashboardModule } from 'src/app/areas/dashboard/dashboard.module';
 import { AiPromptingFrontendModule } from 'src/app/areas/ai-prompting-frontend/ai-prompting-frontend.module';
 
 @NgModule({
-    declarations:
-        [
-            MainHeaderComponent,
-            MainMenuComponent
-        ],
-    imports:
-        [
-            CommonModule,
-            AppRoutingModule,
-            FlexLayoutModule,
-            CommonComponentsModule,
-            LoginModule,
-            DashboardModule,
-            AiPromptingFrontendModule,
-        ],
-    exports:
-        [
-            MainHeaderComponent,
-            MainMenuComponent
-        ]
+    declarations: [MainHeaderComponent, MainMenuComponent],
+    imports: [
+        CommonModule,
+        AppRoutingModule,
+        FlexLayoutModule,
+        CommonComponentsModule,
+        LoginModule,
+        DashboardModule,
+        AiPromptingFrontendModule,
+    ],
+    exports: [MainHeaderComponent, MainMenuComponent],
 })
 export class AreasModule {}
