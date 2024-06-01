@@ -26,18 +26,3 @@
 {
     padding: 10px;
 }
-
-#myHtmlEditorContainer div.html-content {
-  font-size: 16px;
-  color: #333;
-}
-
-#myHtmlEditorContainer div.html-content p {
-  margin: 0 0 1em;
-  font-weight: normal !important;
-}
-
-#myHtmlEditorContainer div.html-content b,
-#myHtmlEditorContainer div.html-content strong {
-  font-weight: bold !important;
-}

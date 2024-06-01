@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-html-editor',
@@ -7,20 +6,13 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
     styleUrls: ['./html-editor.component.css'],
 })
 export class HtmlEditorComponent implements OnInit {
-    htmlContent: string = '<p><b>Your HTML</b> content here</p>';
-    safeHtmlContent: SafeHtml | undefined;
+    public htmlContent: string = '';
 
-    constructor(private sanitizer: DomSanitizer) {}
+    constructor() {}
 
-    ngOnInit(): void {
-        this.safeHtmlContent = this.getSafeHtml(this.htmlContent);
-    }
+    ngOnInit(): void {}
 
-    getSafeHtml(html: string): SafeHtml {
-        return this.sanitizer.bypassSecurityTrustHtml(html);
-    }
-
-    onHtmlContentChange(): void {
-        this.safeHtmlContent = this.getSafeHtml(this.htmlContent);
+    OnModeChange() {
+        console.log('OnModeChange()');
     }
 }

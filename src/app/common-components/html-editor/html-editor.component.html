@@ -1,12 +1,13 @@
 <div fxLayout="row" fxFlex>
-    <div #myHtmlEditorContainer fxLayout="column" fxFlex="50">
+    <div fxLayout="column" fxFlex="50">
         <div class="buttons-container" fxLayout="row" fxLayoutAlign="start center">
-            <div class="button-container" fxLayout="row" fxLayoutAlign="center center">M</div>
+            <div (click)="OnModeChange()" class="button-container" fxLayout="row" fxLayoutAlign="center center">
+                Mode
+            </div>
         </div>
-
-        <div class="html-content" [innerHTML]="safeHtmlContent"></div>
+        <textarea (ngModel)="(htmlContent)" rows="50" class="html-editor-area"></textarea>
     </div>
     <div class="second-column" fxLayout="column" fxFlex="50">
-        <textarea class="html-editor" [(ngModel)]="htmlContent"></textarea>
+        <textarea (ngModel)="(htmlContent)" rows="50" class="html-editor-area"></textarea>
     </div>
 </div>

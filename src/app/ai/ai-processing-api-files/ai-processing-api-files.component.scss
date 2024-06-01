@@ -1,0 +1,43 @@
+.content-container {
+    line-height: 1.2rem;
+
+    .section-container {
+        .content-container {
+            width: calc(50% - 10px);
+        }
+    }
+
+    .subcontainer {
+        margin-left: 15px;
+    }
+
+    .button {
+        cursor: pointer;
+    }
+
+    .header-button-container {
+        height: 70px;
+    }
+
+    .second-column {
+        margin-left: 15px;
+    }
+
+    .files-list-container {
+        input {
+            cursor: pointer;
+        }
+
+        .file-container {
+            line-height: 1.2rem;
+        }
+
+        .info {
+            margin: 0 10px;
+        }
+
+        .tokens {
+            white-space: nowrap;
+        }
+    }
+}
