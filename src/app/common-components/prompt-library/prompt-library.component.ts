@@ -11,7 +11,7 @@ export class PromptLibraryComponent implements OnInit {
     @Output()
     selectPromptEmitter = new EventEmitter<IAiFile | null>();
 
-    public projectDirectoryPath: string[] = ['e:', 'PROJECT', 'aiworks-prompts'];
+    public projectDirectoryPath: string[] = ['c:', 'project', 'aiworks-prompts'];
     files: IAiFile[] = [];
     selectedFile: IAiFile | null = null;
     editMode: boolean = false;
